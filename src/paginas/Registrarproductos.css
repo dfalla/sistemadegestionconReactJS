@@ -1,0 +1,14 @@
+fieldset{
+    margin-left: 500px;
+    height: 400px;
+    width: 200px;
+}
+
+textarea { 
+    resize: none;
+}
+
+fieldset .formulario{
+    color: white;
+}
+
