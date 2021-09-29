@@ -1,29 +1,29 @@
+import axios from "axios";
+import Modificarproducto from "../paginas/Modificarproducto";
+const baseURL = "https://my-json-server.typicode.com/typicode/demo/posts";
+
 const PostService = {
-    
 
-    listarTodos : function () {
+    listarTodos: async  function () {
 
+         const {data} = await axios.get(baseURL);
 
-      let listadoPosts = [
-            {
-                "id": 1,
-                "title": "json-server",
-                "author": "typicode"
-            },
-            {
-                "id": 2,
-                "title": "json-serve v1 r",
-                "author": "typicode v2"
-            },
-            {
-                "id": 3,
-                "title": "json-serve v2",
-                "author": "typicode v3"
-            }
-        ];
+         // decontruccion
+            array ={'id':90 ,'name':"danielS","LAST":"pitiao" };
+            let var1 = array[0];
+            let var2 = array[1];
+            let var3 = array[2];
 
-        return listadoPosts
+            let nombre = array["nombre"];
+            let { nombre }  = array;
+
+            const {var1} = array;
+
+         //response http    header - body 
+
+         return data;
     }
+
 
 }
 
